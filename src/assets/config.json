@@ -1,0 +1,4 @@
+{
+    "heroesUrl": "http://localhost:5000/api/Login",
+    "textfile": "assets/textfile.txt"
+  }

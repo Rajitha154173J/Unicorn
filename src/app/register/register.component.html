@@ -1,9 +1,9 @@
 <body>
   <div class="container">
   <!---heading---->
-      <header class="heading">Registration-Form </header>
+      <header class="heading">Registration-Form  </header>
    <!---Form starting----> 
-   <form #Registration="ngForm">
+   <form #registration="ngForm">
      
    <div class="row ">
     <!--- For Name---->
@@ -12,7 +12,7 @@
             <div class="col-xs-4">
                       <label class="firstname">First Name :</label> </div>
               <div class="col-xs-8">
-                  <input type="text" name="fname" id="fname" class="form-control " [(ngModel)]="user.FirstName" >
+                  <input type="text" name="FirstName" id="fname" class="form-control " [(ngModel)]="user.FirstName" >
               </div>
            </div>
       </div>
@@ -23,7 +23,7 @@
             <div class="col-xs-4">
                       <label class="lastname">Last Name :</label></div>
          <div class ="col-xs-8">	 
-                  <input type="text" name="lname" id="lname" class="form-control last" [(ngModel)]="user.LastName">
+                  <input type="text" name="LastName" id="lname" class="form-control last" [(ngModel)]="user.LastName">
                  </div>
           </div>
       </div>
@@ -33,7 +33,7 @@
             <div class="col-xs-4">
                   <label class="mail" >User name :</label></div>
             <div class="col-xs-8"	>	 
-                 <input type="username" name="username"  id="username"class="form-control"  [(ngModel)]="user.UserName" required>
+                 <input type="username" name="UserName"  id="username"class="form-control"  [(ngModel)]="user.UserName" required>
               </div>
           </div>
       </div>
@@ -43,7 +43,7 @@
               <div class="col-xs-4">
                       <label class="pass">Password :</label></div>
            <div class="col-xs-8">
-                    <input type="password" name="password" id="password" class="form-control" [(ngModel)]="user.Password" required>
+                    <input type="password" name="Password" id="password" class="form-control" [(ngModel)]="user.Password" required>
           </div>
            </div>
        </div>
@@ -52,9 +52,11 @@
           
           <div class="col-sm-12">
               
-              <button type="submit" class="btn btn-success" (click)="onSubmit()" >Submit</button>
+              
+              <button type="button" class="btn btn-success" (click)="onSubmit()">Submit</button>
 
       </div>
+     
     </div>	 
            
   </form>
